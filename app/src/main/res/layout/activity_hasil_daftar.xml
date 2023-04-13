@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context="com.rsjms.daftar.HasilDaftar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EEEEEE"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:background="#EEEEEE"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/top_background"
+                    android:contentDescription="@string/todo" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/man"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView9"
+                    />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bukti_pendaftaran"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView10"
+                    app:layout_constraintStart_toStartOf="@+id/imageView10"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tanggal"
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10sp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="#fff"
+                        app:cardCornerRadius="30dp">
+
+                        <EditText
+                            android:id="@+id/Vnorawat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:drawableStart="@drawable/rawat"
+                            android:drawablePadding="10dp"
+                            android:focusable="false"
+                            android:hint="@string/no_rawat"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        app:cardBackgroundColor="#fff"
+                        app:cardCornerRadius="30dp">
+
+                        <EditText
+                            android:id="@+id/VnmaPoli"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:drawableStart="@drawable/poli"
+                            android:drawablePadding="10dp"
+                            android:focusable="false"
+                            android:hint="@string/nama_poli"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        app:cardBackgroundColor="#fff"
+                        app:cardCornerRadius="30dp">
+
+                        <EditText
+                            android:id="@+id/Vnmadokter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:drawableStart="@drawable/dokter2"
+                            android:drawablePadding="10dp"
+                            android:focusable="false"
+                            android:hint="@string/nama_dokter"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        app:cardBackgroundColor="#fff"
+                        app:cardCornerRadius="30dp">
+
+                        <EditText
+                            android:id="@+id/Vstts"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:drawableStart="@drawable/status"
+                            android:drawablePadding="10dp"
+                            android:focusable="false"
+                            android:hint="@string/status"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        app:cardBackgroundColor="#fff"
+                        app:cardCornerRadius="30dp">
+
+                        <EditText
+                            android:id="@+id/Vcara"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:drawableStart="@drawable/carabayar"
+                            android:drawablePadding="10dp"
+                            android:focusable="false"
+                            android:hint="@string/cara_bayar"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        app:cardBackgroundColor="#fff"
+                        app:cardCornerRadius="30dp">
+
+                        <EditText
+                            android:id="@+id/Vnoreg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:drawableStart="@drawable/number"
+                            android:drawablePadding="10dp"
+                            android:focusable="false"
+                            android:hint="@string/no_reg"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        app:cardBackgroundColor="#fff"
+                        app:cardCornerRadius="30dp">
+
+                        <EditText
+                            android:id="@+id/Vpesan"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:drawableStart="@drawable/ic_baseline_message_24"
+                            android:drawablePadding="10dp"
+                            android:focusable="false"
+                            android:hint="Pesan"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="30dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/Back"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:background="@drawable/button_back"
+                            android:elevation="3dp"
+                            android:text="@string/kembali_kehalaman_utama"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>
